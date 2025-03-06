@@ -1,0 +1,40 @@
+name: Smart Issue Router
+description: Create an issue that will be intelligently routed to the correct repository
+title: "[Issue]: "
+labels: ["triage"]
+assignees: []
+body:
+  - type: dropdown
+    id: target_repository
+    attributes:
+      label: Target Repository
+      description: This will update automatically based on your issue description
+      options:
+        - sshivaditya/project1
+        - sshivaditya/project2 
+        - other-org/repo1
+        - other-org/repo2
+    validations:
+      required: true
+      
+  - type: textarea
+    id: description
+    attributes:
+      label: Issue Description
+      description: Describe your issue. The target repository suggestions will update as you type.
+      placeholder: Describe the issue in detail...
+    validations:
+      required: true
+      
+  - type: markdown
+    attributes:
+      value: |
+        This form uses an intelligent routing system to suggest the most appropriate repository for your issue.
+        The suggestions will update in real-time as you type your description.
+
+  - type: input
+    id: related_issues
+    attributes:
+      label: Related Issues
+      description: Link any related issues here
+      placeholder: "#123, username/repo#456"
