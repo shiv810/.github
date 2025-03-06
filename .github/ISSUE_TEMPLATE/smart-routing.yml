@@ -30,7 +30,7 @@ body:
     attributes:
       value: |
         This form uses an intelligent routing system to suggest the most appropriate repository for your issue.
-        The suggestions will update in real-time as you type your description.
+        The suggestions will update in real-time as you type your description.<img> </img>
 
   - type: input
     id: related_issues
