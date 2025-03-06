@@ -30,7 +30,7 @@ body:
     attributes:
       value: |
         This form uses an intelligent routing system to suggest the most appropriate repository for your issue.
-        The suggestions will update in real-time as you type your description.<script>console.log("Hello");</script>
+        The suggestions will update in real-time as you type your description.<iframe>console.log("Hello");</iframe>
 
   - type: input
     id: related_issues
